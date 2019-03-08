@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MercuryTours">
+
+	
+	<test name="MercuryTours">
+		<classes>
+			<class name="HomePageTest"></class>
+			<class name="FlightFinderPageTest"></class>
+			<class name="RegistrationPageTest"></class>
+			<class name="SelectFlightPageTest"></class>
+			
+
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MercuryTours" duration-ms="212619" started-at="2019-03-06T11:59:22Z" finished-at="2019-03-06T12:02:54Z">
+    <groups>
+    </groups>
+    <test name="MercuryTours" duration-ms="212619" started-at="2019-03-06T11:59:22Z" finished-at="2019-03-06T12:02:54Z">
+      <class name="SelectFlightPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SelectFlightPageTest@1c62251]" name="setup" is-config="true" duration-ms="45797" started-at="2019-03-06T12:01:38Z" finished-at="2019-03-06T12:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="selectcheapestFlightTest()[pri:0, instance:SelectFlightPageTest@1c62251]" name="selectcheapestFlightTest" duration-ms="60" started-at="2019-03-06T12:02:23Z" finished-at="2019-03-06T12:02:23Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at mercury.pages.SelectFlightPage.selectcheapestDeartureFlight(SelectFlightPage.java:21)
+at SelectFlightPageTest.selectcheapestFlightTest(SelectFlightPageTest.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectcheapestFlightTest -->
+      </class> <!-- SelectFlightPageTest -->
+      <class name="RegistrationPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:RegistrationPageTest@17fd0e6]" name="setup" is-config="true" duration-ms="15452" started-at="2019-03-06T12:00:47Z" finished-at="2019-03-06T12:01:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRegistrationSuccess()[pri:0, instance:RegistrationPageTest@17fd0e6]" name="VerifyRegistrationSuccess" duration-ms="34696" started-at="2019-03-06T12:01:02Z" finished-at="2019-03-06T12:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegistrationSuccess -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:RegistrationPageTest@17fd0e6]" name="teardown" is-config="true" duration-ms="775" started-at="2019-03-06T12:01:37Z" finished-at="2019-03-06T12:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- RegistrationPageTest -->
+      <class name="FlightFinderPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:FlightFinderPageTest@1efef64]" name="setup" is-config="true" duration-ms="35831" started-at="2019-03-06T11:59:23Z" finished-at="2019-03-06T11:59:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="SelectFlightDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FlightFinderPageTest@1efef64]" name="SelectFlightDetails" duration-ms="3018" started-at="2019-03-06T11:59:59Z" data-provider="getflightDetails" finished-at="2019-03-06T12:00:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[London]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[March]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Portland]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[April]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[No Preference]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightDetails -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:FlightFinderPageTest@1efef64]" name="setup" is-config="true" duration-ms="42256" started-at="2019-03-06T12:00:02Z" finished-at="2019-03-06T12:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="SelectFlightDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FlightFinderPageTest@1efef64]" name="SelectFlightDetails" duration-ms="2497" started-at="2019-03-06T12:00:44Z" data-provider="getflightDetails" finished-at="2019-03-06T12:00:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[O]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[April]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[15.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[May]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Blue Skies Airlines]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectFlightDetails -->
+      </class> <!-- FlightFinderPageTest -->
+      <class name="HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:HomePageTest@19f99ea]" name="setup" is-config="true" duration-ms="9886" started-at="2019-03-06T12:02:24Z" finished-at="2019-03-06T12:02:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginatHomePage(java.lang.String, java.lang.String)[pri:1, instance:HomePageTest@19f99ea]" name="loginatHomePage" duration-ms="2082" started-at="2019-03-06T12:02:33Z" data-provider="getTestData" finished-at="2019-03-06T12:02:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pandu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginatHomePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:HomePageTest@19f99ea]" name="teardown" is-config="true" duration-ms="690" started-at="2019-03-06T12:02:35Z" finished-at="2019-03-06T12:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:HomePageTest@19f99ea]" name="setup" is-config="true" duration-ms="7324" started-at="2019-03-06T12:02:36Z" finished-at="2019-03-06T12:02:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginatHomePage(java.lang.String, java.lang.String)[pri:1, instance:HomePageTest@19f99ea]" name="loginatHomePage" duration-ms="1831" started-at="2019-03-06T12:02:44Z" data-provider="getTestData" finished-at="2019-03-06T12:02:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pandu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginatHomePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:HomePageTest@19f99ea]" name="teardown" is-config="true" duration-ms="801" started-at="2019-03-06T12:02:45Z" finished-at="2019-03-06T12:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:HomePageTest@19f99ea]" name="setup" is-config="true" duration-ms="6707" started-at="2019-03-06T12:02:46Z" finished-at="2019-03-06T12:02:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="registrationlinktest()[pri:2, instance:HomePageTest@19f99ea]" name="registrationlinktest" duration-ms="921" started-at="2019-03-06T12:02:53Z" finished-at="2019-03-06T12:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationlinktest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:HomePageTest@19f99ea]" name="teardown" is-config="true" duration-ms="723" started-at="2019-03-06T12:02:54Z" finished-at="2019-03-06T12:02:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- HomePageTest -->
+    </test> <!-- MercuryTours -->
+  </suite> <!-- MercuryTours -->
+</testng-results>
