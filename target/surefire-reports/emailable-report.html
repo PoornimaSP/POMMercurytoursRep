@@ -31,45 +31,123 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">196.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">3</td><td class="numi">3</td><td class="numi_attn">3</td><td class="numi_attn">1</td><td class="numi">219.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">FlightFinderPageTest</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1552376139202</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">SelectFlightPageTest</td><td><a href="#m2"><b>setup</b>  </a></td><td class="numi">1</td><td>1552376309232</td><td class="numi">0</td></tr>
 <tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">SelectFlightPageTest</td><td><a href="#m1"><b>selectcheapestFlightTest</b>  </a></td><td class="numi">1</td><td>1551956718068</td><td class="numi">57</td></tr>
+<tr class="failedodd"><td rowspan="1">RegistrationPageTest</td><td><a href="#m3"><b>VerifyRegistrationSuccess</b>  </a></td><td class="numi">1</td><td>1552376267679</td><td class="numi">40907</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">FlightFinderPageTest</td><td><a href="#m4"><b>setup</b>  </a></td><td class="numi">1</td><td>1552376222840</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">FlightFinderPageTest</td><td><a href="#m5"><b>SelectFlightDetails</b>  </a></td><td class="numi">2</td><td>1552376222838</td><td class="numi">3</td></tr><tr class="skippedodd"><td><a href="#m6"><b>SelectFlightDetails</b>  </a></td><td class="numi">2</td><td>1552376222838</td><td class="numi">3</td></tr>
+<tr class="skippedeven"><td rowspan="1">SelectFlightPageTest</td><td><a href="#m7"><b>selectcheapestFlightTest</b>  </a></td><td class="numi">1</td><td>1552376355128</td><td class="numi">1</td></tr>
 <tr><th colspan="4">Surefire test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">FlightFinderPageTest</td><td><a href="#m2"><b>SelectFlightDetails</b>  </a></td><td class="numi">2</td><td>1551956565239</td><td class="numi">51060</td></tr><tr class="passedodd"><td><a href="#m3"><b>SelectFlightDetails</b>  </a></td><td class="numi">2</td><td>1551956565239</td><td class="numi">51060</td></tr>
-<tr class="passedeven"><td rowspan="3">HomePageTest</td><td><a href="#m4"><b>loginatHomePage</b>  </a></td><td class="numi">2</td><td>1551956645793</td><td class="numi">18501</td></tr><tr class="passedeven"><td><a href="#m5"><b>loginatHomePage</b>  </a></td><td class="numi">2</td><td>1551956645793</td><td class="numi">18501</td></tr><tr class="passedeven"><td><a href="#m6"><b>registrationlinktest</b>  </a></td><td class="numi">1</td><td>1551956678137</td><td class="numi">1175</td></tr>
-<tr class="passedodd"><td rowspan="1">RegistrationPageTest</td><td><a href="#m7"><b>VerifyRegistrationSuccess</b>  </a></td><td class="numi">1</td><td>1551956690182</td><td class="numi">4674</td></tr>
+<tr class="passedodd"><td rowspan="3">HomePageTest</td><td><a href="#m8"><b>loginatHomePage</b>  </a></td><td class="numi">2</td><td>1552376235075</td><td class="numi">12180</td></tr><tr class="passedodd"><td><a href="#m9"><b>loginatHomePage</b>  </a></td><td class="numi">2</td><td>1552376235075</td><td class="numi">12180</td></tr><tr class="passedodd"><td><a href="#m10"><b>registrationlinktest</b>  </a></td><td class="numi">1</td><td>1552376258000</td><td class="numi">966</td></tr>
 </table>
 <h1>Surefire test</h1>
-<h2 id="m1">SelectFlightPageTest:selectcheapestFlightTest</h2>
+<h2 id="m1">SelectFlightPageTest:setup</h2>
 <div style="padding-left:3em">
-<p>null</p>
-mercury.pages.SelectFlightPage.selectcheapestDeartureFlight(SelectFlightPage.java:21)
-<br/>at SelectFlightPageTest.selectcheapestFlightTest(SelectFlightPageTest.java:31)
+<p>timeout
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WELCOME-PC&apos;, ip: &apos;192.168.31.163&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50811}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 354ece5c2d20b1e8a3b152287efaa5c2</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at mercury.pages.HomePage.Login(HomePage.java:33)
+<br/>at SelectFlightPageTest.setup(SelectFlightPageTest.java:22)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">FlightFinderPageTest:setup</h2>
+<div style="padding-left:3em">
+<p>timeout
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WELCOME-PC&apos;, ip: &apos;192.168.31.163&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50652}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 4e922228968fba00c67f23c4b49b215b</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at mercury.pages.HomePage.Login(HomePage.java:33)
+<br/>at FlightFinderPageTest.setup(FlightFinderPageTest.java:26)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">RegistrationPageTest:VerifyRegistrationSuccess</h2>
+<div style="padding-left:3em">
+<p>timeout
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WELCOME-PC&apos;, ip: &apos;192.168.31.163&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Windows\TEMP\scoped_dir4...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50778}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: ca021608807a93829d5006a14d6f0626</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at mercury.pages.RegistrationPage.enterRegdetails(RegistrationPage.java:38)
+<br/>at RegistrationPageTest.VerifyRegistrationSuccess(RegistrationPageTest.java:29)
 <br/>30 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">RegistrationPageTest:VerifyRegistrationSuccess</h2>
+<h2 id="m4">FlightFinderPageTest:setup</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">FlightFinderPageTest:SelectFlightDetails</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
-<tr class="param stripe"><td>O</td>
-<td>2.0</td>
-<td>Paris</td>
-<td>April</td>
-<td>15.0</td>
-<td>Sydney</td>
-<td>May</td>
-<td>8.0</td>
-<td>B</td>
-<td>Blue Skies Airlines</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">FlightFinderPageTest:SelectFlightDetails</h2>
+<h2 id="m5">FlightFinderPageTest:SelectFlightDetails</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
 <tr class="param stripe"><td>R</td>
@@ -85,9 +163,27 @@ mercury.pages.SelectFlightPage.selectcheapestDeartureFlight(SelectFlightPage.jav
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">HomePageTest:registrationlinktest</h2>
+<h2 id="m6">FlightFinderPageTest:SelectFlightDetails</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>O</td>
+<td>2.0</td>
+<td>Paris</td>
+<td>April</td>
+<td>15.0</td>
+<td>Sydney</td>
+<td>May</td>
+<td>8.0</td>
+<td>B</td>
+<td>Blue Skies Airlines</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">HomePageTest:loginatHomePage</h2>
+<h2 id="m7">SelectFlightPageTest:selectcheapestFlightTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">HomePageTest:registrationlinktest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">HomePageTest:loginatHomePage</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>Amma</td>
@@ -95,7 +191,7 @@ mercury.pages.SelectFlightPage.selectcheapestDeartureFlight(SelectFlightPage.jav
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">HomePageTest:loginatHomePage</h2>
+<h2 id="m10">HomePageTest:loginatHomePage</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>q</td>

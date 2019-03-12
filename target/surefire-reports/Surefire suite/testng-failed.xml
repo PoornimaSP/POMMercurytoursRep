@@ -3,20 +3,16 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test name="Surefire test(failed)">
     <classes>
-      <class name="HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- HomePageTest -->
       <class name="RegistrationPageTest">
         <methods>
           <include name="setup"/>
+          <include name="VerifyRegistrationSuccess"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- RegistrationPageTest -->
       <class name="FlightFinderPageTest">
         <methods>
+          <include name="SelectFlightDetails"/>
           <include name="setup"/>
         </methods>
       </class> <!-- FlightFinderPageTest -->
@@ -26,6 +22,12 @@
           <include name="selectcheapestFlightTest"/>
         </methods>
       </class> <!-- SelectFlightPageTest -->
+      <class name="HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- HomePageTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
