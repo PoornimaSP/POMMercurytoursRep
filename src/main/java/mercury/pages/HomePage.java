@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import mercury.base.base;
 
 public class HomePage extends base {
+	//first comment
 	
 	@FindBy(xpath="//a[contains(text(),'REGISTER')]")
 	WebElement Register;
